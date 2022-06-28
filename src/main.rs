@@ -171,14 +171,14 @@ fn monitor_clients(
         }
     }
     for key in list.iter() {
-        let _ = clients.remove(key);
+        clients.insert(*key, None);
     }
     Ok(())
 }
 
 fn clean_up(n: i32) {
     if n != 0 {
-        panic!("{}", format!("pecho is terminated by system signal: {}", n));
+        panic!("{}", format!("Service is terminated by system signal: {}", n));
     }
 }
 
