@@ -1,0 +1,9 @@
+[package]
+name = "shellbackend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+latpr = { git = "https://github.com/lxsang/latpr.git", rev = "fa3e16caf96f0600eb0c2c54b57717072993bd15" }
